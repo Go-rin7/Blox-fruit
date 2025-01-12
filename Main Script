@@ -1,6 +1,5 @@
--- Go rin Hub
--- Version: Beta
---Sub cho Go rin di ae
+-- Sub cho Go rin di
+-- Version:beta 1.1
 
 -- Instances:
 
@@ -16,6 +15,8 @@ local Redz = Instance.new("TextButton")
 local WAzure = Instance.new("TextButton")
 local CommingSoon = Instance.new("TextLabel")
 local Subtext = Instance.new("TextLabel")
+local DestroyGui = Instance.new("TextButton")
+local NameOwner = Instance.new("TextLabel")
 local OpenmenuButton = Instance.new("ImageButton")
 local UICornerButton = Instance.new("UICorner")
 
@@ -24,13 +25,15 @@ local UICornerButton = Instance.new("UICorner")
 GorinHub.Name = "Go rin Hub"
 GorinHub.Parent = game.CoreGui
 
+--Main Menu
+
 Menu.Name = "Menu"
 Menu.Parent = GorinHub
 Menu.BackgroundColor3 = Color3.fromRGB(26, 255, 10)
 Menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Menu.BorderSizePixel = 0
 Menu.Position = UDim2.new(0.325305223, 0, 0.143968865, 0)
-Menu.Size = UDim2.new(0, 528, 0, 351)
+Menu.Size = UDim2.new(0, 527, 0, 351)
 Menu.Active = true
 Menu.Visible = true
 Menu.Draggable = true
@@ -38,12 +41,13 @@ Menu.Draggable = true
 HubName.Name = "Hub Name"
 HubName.Parent = Menu
 HubName.BackgroundColor3 = Color3.fromRGB(251, 255, 24)
+HubName.BackgroundTransparency = 1.000
 HubName.BorderColor3 = Color3.fromRGB(0, 0, 0)
 HubName.BorderSizePixel = 0
-HubName.Position = UDim2.new(0.309270352, 0, -0.00195660279, 0)
+HubName.Position = UDim2.new(0.157776684, 0, -0.00195660279, 0)
 HubName.Size = UDim2.new(0, 200, 0, 50)
 HubName.Font = Enum.Font.SourceSans
-HubName.Text = "Go rin Hub(beta)"
+HubName.Text = "Go rin Hub(beta 1.1)"
 HubName.TextColor3 = Color3.fromRGB(0, 0, 0)
 HubName.TextScaled = true
 HubName.TextSize = 14.000
@@ -55,7 +59,7 @@ Icon1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Icon1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Icon1.BorderSizePixel = 0
 Icon1.Position = UDim2.new(-0.00127595849, 0, -0.00417925604, 0)
-Icon1.Size = UDim2.new(0, 79, 0, 84)
+Icon1.Size = UDim2.new(0, 84, 0, 84)
 Icon1.Image = "http://www.roblox.com/asset/?id=112082203484238"
 
 UICorner1.CornerRadius = UDim.new(1, 0)
@@ -80,14 +84,15 @@ Close.MouseButton1Up:Connect(function()
 	OpenmenuButton.Visible = true
 end)
 
+
 MenuHub.Name = "Menu Hub"
 MenuHub.Parent = Menu
 MenuHub.Active = true
 MenuHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MenuHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MenuHub.BorderSizePixel = 0
-MenuHub.Position = UDim2.new(0.000504580385, 0, 0.258333653, 0)
-MenuHub.Size = UDim2.new(0, 527, 0, 260)
+MenuHub.Position = UDim2.new(0.000504522584, 0, 0.235136986, 0)
+MenuHub.Size = UDim2.new(0, 527, 0, 268)
 MenuHub.VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
 
 HohoHub.Name = "Hoho Hub"
@@ -107,6 +112,7 @@ HohoHub.MouseButton1Up:Connect(function()
 	_G.HohoVersion = "v1"
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
 end)
+
 
 Redz.Name = "Redz"
 Redz.Parent = MenuHub
@@ -130,7 +136,7 @@ WAzure.Parent = MenuHub
 WAzure.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 WAzure.BorderColor3 = Color3.fromRGB(0, 0, 0)
 WAzure.BorderSizePixel = 0
-WAzure.Position = UDim2.new(0.0796963945, 0, 0.128916234, 0)
+WAzure.Position = UDim2.new(0.0778816715, 0, 0.154847786, 0)
 WAzure.Size = UDim2.new(0, 200, 0, 50)
 WAzure.Font = Enum.Font.SourceSans
 WAzure.Text = "W-Azure Hub"
@@ -141,6 +147,7 @@ WAzure.TextWrapped = true
 WAzure.MouseButton1Up:Connect(function()
 	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
 end)
+
 
 CommingSoon.Name = "Comming Soon"
 CommingSoon.Parent = MenuHub
@@ -170,6 +177,44 @@ Subtext.TextScaled = true
 Subtext.TextSize = 14.000
 Subtext.TextWrapped = true
 
+DestroyGui.Name = "Destroy Gui"
+DestroyGui.Parent = Menu
+DestroyGui.BackgroundColor3 = Color3.fromRGB(64, 0, 255)
+DestroyGui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DestroyGui.BorderSizePixel = 0
+DestroyGui.Position = UDim2.new(0.745328009, 0, -0.00569800567, 0)
+DestroyGui.Size = UDim2.new(0, 84, 0, 49)
+DestroyGui.Font = Enum.Font.SourceSans
+DestroyGui.Text = "Destroy Gui"
+DestroyGui.TextColor3 = Color3.fromRGB(0, 0, 0)
+DestroyGui.TextScaled = true
+DestroyGui.TextSize = 14.000
+DestroyGui.TextWrapped = true
+DestroyGui.MouseButton1Up:Connect(function()
+	Menu.Visible = false
+	OpenmenuButton.Visible = false
+end)
+
+
+
+NameOwner.Name = "Name Owner"
+NameOwner.Parent = Menu
+NameOwner.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NameOwner.BackgroundTransparency = 1.000
+NameOwner.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NameOwner.BorderSizePixel = 0
+NameOwner.Position = UDim2.new(0.170777991, 0, 0.105413109, 0)
+NameOwner.Size = UDim2.new(0, 200, 0, 23)
+NameOwner.Font = Enum.Font.SourceSansLight
+NameOwner.Text = "Owner:Tinkiki113"
+NameOwner.TextColor3 = Color3.fromRGB(0, 0, 0)
+NameOwner.TextScaled = true
+NameOwner.TextSize = 14.000
+NameOwner.TextWrapped = true
+NameOwner.TextXAlignment = Enum.TextXAlignment.Left
+
+--Open menu button
+
 OpenmenuButton.Name = "Open menu Button"
 OpenmenuButton.Parent = GorinHub
 OpenmenuButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -179,7 +224,7 @@ OpenmenuButton.Position = UDim2.new(0.0658851415, 0, 0.385992169, 0)
 OpenmenuButton.Size = UDim2.new(0, 50, 0, 50)
 OpenmenuButton.Image = "http://www.roblox.com/asset/?id=112082203484238"
 OpenmenuButton.Active = true
-OpenmenuButton.Visible = false
+OpenmenuButton.Visible = true
 OpenmenuButton.Draggable = true
 OpenmenuButton.MouseButton1Up:Connect(function()
 	Menu.Visible = true
