@@ -179,6 +179,7 @@ OpenmenuButton.Position = UDim2.new(0.0658851415, 0, 0.385992169, 0)
 OpenmenuButton.Size = UDim2.new(0, 50, 0, 50)
 OpenmenuButton.Image = "http://www.roblox.com/asset/?id=112082203484238"
 OpenmenuButton.Active = true
+OpenmenuButton.Visible = false
 OpenmenuButton.Draggable = true
 OpenmenuButton.MouseButton1Up:Connect(function()
 	Menu.Visible = true
