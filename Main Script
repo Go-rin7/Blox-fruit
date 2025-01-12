@@ -1,5 +1,6 @@
 -- Go rin Hub
 -- Version: Beta
+--Sub cho Go rin di ae
 
 -- Instances:
 
@@ -124,7 +125,7 @@ Redz.MouseButton1Up:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
 end)
 
-WAzure.Name = "W-Azure"
+WAzure.Name = "W-Azure Hub"
 WAzure.Parent = MenuHub
 WAzure.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 WAzure.BorderColor3 = Color3.fromRGB(0, 0, 0)
