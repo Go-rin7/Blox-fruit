@@ -125,7 +125,7 @@ Redz.MouseButton1Up:Connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
 end)
 
-WAzure.Name = "W-Azure Hub"
+WAzure.Name = "W-Azure"
 WAzure.Parent = MenuHub
 WAzure.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 WAzure.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -133,7 +133,7 @@ WAzure.BorderSizePixel = 0
 WAzure.Position = UDim2.new(0.0796963945, 0, 0.128916234, 0)
 WAzure.Size = UDim2.new(0, 200, 0, 50)
 WAzure.Font = Enum.Font.SourceSans
-WAzure.Text = "W-Azure"
+WAzure.Text = "W-Azure Hub"
 WAzure.TextColor3 = Color3.fromRGB(4, 255, 0)
 WAzure.TextScaled = true
 WAzure.TextSize = 14.000
