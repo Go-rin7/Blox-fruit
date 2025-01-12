@@ -19,6 +19,7 @@ local DestroyGui = Instance.new("TextButton")
 local NameOwner = Instance.new("TextLabel")
 local OpenmenuButton = Instance.new("ImageButton")
 local UICornerButton = Instance.new("UICorner")
+local GameName = Instance.new("TextLabel")
 
 --Properties:
 
@@ -234,3 +235,18 @@ end)
 UICornerButton.CornerRadius = UDim.new(1, 0)
 UICornerButton.Name = "UICorner Button"
 UICornerButton.Parent = OpenmenuButton
+
+GameName.Name = "Game Name"
+GameName.Parent = Menu
+GameName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameName.BackgroundTransparency = 1.000
+GameName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GameName.BorderSizePixel = 0
+GameName.Position = UDim2.new(0.142596424, 0, 0.170940176, 0)
+GameName.Size = UDim2.new(0, 114, 0, 22)
+GameName.Font = Enum.Font.SourceSans
+GameName.Text = "Game:Blox Fruit"
+GameName.TextColor3 = Color3.fromRGB(0, 0, 0)
+GameName.TextScaled = true
+GameName.TextSize = 14.000
+GameName.TextWrapped = true
